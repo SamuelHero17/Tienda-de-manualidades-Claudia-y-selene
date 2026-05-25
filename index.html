@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regalos y detalles</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+
+    </script>
+
+    <script>
+        emailjs.init("lhtDzhwP480q720Ih");
+    </script>
+    <body>
+        <h1>Bienvenidos a la tienda digital de claudia y selene</h1>
+        <hr>
+        <h2>Aquí encontrarás todo tipo de detalles para sorprender a tus seres queridos </h2>
+        <hr>
+        <div class="contenedor-productos">
+
+        <div class="Producto">
+            <h3>Adorno combi</h3>
+            <img
+            src="/imagenes/AdornoCombi.jpg"
+            width="250"
+            alt="Adorno combi">
+            <p>$500</p>
+            <button onclick="agregarCarrito('Adorno combi',500)">
+                Agregar al carrito
+            </button>
+            </div>
+        
+        <div class="Producto">
+            <h3>Florero mini esfera</h3>
+            <img
+            src="/imagenes/FloreroMiniEsfera.jpg"
+            width="250"
+            alt="Florero mini esfera">
+            <p>$400</p>
+            <button onclick="agregarCarrito('Florero mini esfera',400)">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="Producto">
+            <h3>Flor de cera</h3>
+            <img
+            src="/imagenes/florcera.jpg"
+            width="250"
+            alt="Flor de cera">
+            <p>$250</p>
+            <button onclick="agregarCarrito('Flor de cera',250)">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="Producto">
+            <h3>Vela coon forma de combi</h3>
+            <img
+            src="/imagenes/VelaCombi.jpg"
+            width="250"
+            alt="Vela con forma de combi">
+            <p>$300</p>
+            <button onclick="agregarCarrito('Vela con forma de combi',300)">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="Producto">
+            <h3>Vela mundialista</h3>
+            <img
+            src="/imagenes/VelaMundial.jpg"
+            width="250"
+            alt="Vela mundialista">
+            <p>$350</p>
+            <button onclick="agregarCarrito('Vela mundialista',350)">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="Producto">
+            <h3>Floerero Grande</h3>
+            <img
+            src="/imagenes/Florerogrande.jpg"
+            width="250"
+            alt="Florero grande">
+            <p>$450</p>
+            <button onclick="agregarCarrito('Florero grande',450)">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="Producto">
+        <h3>Taza con diseño personalizable</h3>
+        <img
+        src="/imagenes/Taza.JPG"
+        width="250"
+        alt="personalizable">
+        <p>$300</p>
+        <button onclick="agregarCarrito('Taza con diseño personalizable',300)">
+            Agregar al carrito
+        </button>
+        </div>
+
+        <div class="Producto">
+        <h3>Ramo de cakepops</h3>
+        <img 
+        src="/imagenes/10Cakpops.jpg"
+        width="250"
+        alt="Sencillo">
+        <p>Sencillo $200</p>
+        <button onclick="agregarCarrito('Ramo de cakepops',200)">
+            Agregar al carrito
+        </button>
+        </div>
+
+
+        <div class="Producto">
+        <h3>Vela aromática</h3>
+        
+        <img
+        src="/imagenes/Vela.JPG"
+        width="250"
+        alt="Vela">
+        
+        <p>$200</p>
+        <button onclick="agregarCarrito('Vela aromática',200)">
+            Agregar al carrito
+        </button>
+        </div>
+        
+//Arriba de esta linea se agregan los productos
+        </div>
+        <hr>
+//en esta parte se muestra el carrito de compras 
+        <h2> carrito</h2>
+        <div id="carrito"></div>
+        <h3 id="total">
+            Total: $0
+       
+        <script src="script.js"></script>
+        </h3>
+        <hr>
+//aqui se muestra el proceso de check out
+        <h2>>Checkout</h2>
+
+        <div class="checkout">
+            <input
+            type="text"
+            id="Nombre"
+            placeholder="Tu nombre">
+
+            <input
+            type="text"
+            id="Direccion"
+            placeholder="Tu direccion">
+
+            <input
+            type="tel"
+            id="Telefono"
+            placeholder="Tu telefono 10 digitos"
+            maxlength="10"
+            pattern="[0-9]{10}"
+            required>
+
+            <button onclick="checkout()">
+                Finalizar compra
+                </button>
+        </div>
+       
+
+    </body>
+</html>
