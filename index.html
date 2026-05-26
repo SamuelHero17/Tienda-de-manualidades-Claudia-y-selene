@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <title>Regalos y detalles</title>
+
         <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+            
     </head>
 
 
@@ -14,10 +24,13 @@
         emailjs.init("lhtDzhwP480q720Ih");
     </script>
     <body>
+        <section class="hero">
         <h1>Bienvenidos a la tienda digital de claudia y selene</h1>
-        <img src="imagenes/Logo.png" width="5px" alt="Logo de la tienda">
+        <img src="imagenes/Logo.png"
+        class="logo">
         <hr>
         <h2>Aquí encontrarás todo tipo de detalles para sorprender a tus seres queridos </h2>
+        </section>
         <hr>
         <div class="contenedor-productos">
 
@@ -27,8 +40,8 @@
             src="imagenes/AdornoCombi.jpg"
             width="250"
             alt="Adorno combi">
-            <h2>$500</h2>
-            <button onclick="agregarCarrito('Adorno combi',500)">
+            <h2>$5020</h2>
+            <button onclick="agregarCarrito('Adorno combi',5020)">
                 Agregar al carrito
             </button>
             </div>
@@ -48,7 +61,7 @@
         <div class="Producto">
             <h3>Flor de cera</h3>
             <img
-            src="imagenes/Florcera.jpg"
+            src="imagenes/FlorCera.jpg"
             width="250"
             alt="Flor de cera">
             <h2>$250</h2>
@@ -99,7 +112,7 @@
         src="imagenes/Taza.JPG"
         width="250"
         alt="personalizable">
-        <h2>$300</h2>
+        <h2>$300</h2>       
         <button onclick="agregarCarrito('Taza con diseño personalizable',300)">
             Agregar al carrito
         </button>
@@ -144,7 +157,7 @@
         <script src="script.js"></script>
         </h3>
         <hr>
-//aqui se muestra el proceso de finalizacion de compra
+//aqui se muestra el proceso de check out
         <h2>>Checkout</h2>
 
         <div class="checkout">

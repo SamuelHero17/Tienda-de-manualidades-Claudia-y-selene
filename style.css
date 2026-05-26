@@ -1,5 +1,6 @@
 body{
-    background-color: deeppink;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fc8ee6;
     color: blue;
     font-variant: Arial;
     text-align:center;
@@ -13,20 +14,81 @@ body{
 }
 
 .Producto{
+
     background: #0d3add66;
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 250px;
     text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 15pox rgba(0, 0, 0, 0.08); 
+}
+.producto:hover{
+    transform:translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-button{
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+.producto img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
 }
+
+.logo{
+    width: 150px;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;}
+
+
+button{
+    background: black;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: 600;
+}
+
+button:hover{
+    opacity: 0.8;
+    transform: scale(1.03);
+}
+
+.productos{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.hero{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background: #1a0079;
+    z-index: 1000;
+}
+
+*{
+    transition: 0.3s;
+}
+
 
 .item-carrito{
     background: #1a0079;
@@ -42,7 +104,7 @@ img{
 
 @media(max-width:768px){
     .contenedor-productos{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: 1fr;
     }
 }
 
@@ -52,4 +114,9 @@ img{
     flex-direction: column;
     width: 300px;
     gap: 10px;
+}
+
+h2{
+    margin-top: 40px;
+    text-align: center;
 }
